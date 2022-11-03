@@ -1,7 +1,7 @@
 //Challenge No 1
-function HandlePositiveNegativeNumber(Challenge1TextBox) {
+function HandlePositiveNegativeNumber(event) {
 
-    let EnteredNumber = Challenge1TextBox.target.value;
+    let EnteredNumber = event.target.value;
 
     if (EnteredNumber >= 0) {
         alert("Positive");
@@ -9,10 +9,16 @@ function HandlePositiveNegativeNumber(Challenge1TextBox) {
     else {
         alert("Negative")
     }
-
-
-
-
-
-
 }
+
+//Challenge No 2
+function HandleDaysToAge(event) {
+
+    let Days = event.target.value;
+    let Age = Days/365;
+    Age.toFixed(2);
+
+    alert(Age);
+}
+
+//Challenge No 3
